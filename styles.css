@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  padding: 40px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 400px;
+  min-height: 210px;
+  padding: 10px;
+}
+
+.card_color {
+ color: red;
+}
+
+.card__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card__text {
+  margin-bottom: auto;
+}
+
+.card__text_name {
+  margin-top: -16px;
+  margin-bottom: -2px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.card__btn {
+  align-self: center;
+  margin: 20px 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition-property: color, background-color, border-color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+
+.coloredBtn {
+  border: none;
+  background-color: yellow;
+}
+
+.coloredBtn:hover {
+  background-color: greenyellow;
+}
+
+.coloredBtn:active {
+  color: yellow;
+  background-color: yellowgreen;
+}
+
+.borderBtn {
+  border: 2px solid blueviolet;
+  background-color: transparent;
+}
+
+.borderBtn:hover {
+  border-color: rgb(163, 112, 210);
+  color: rgb(163, 112, 210);
+}
+
+.borderBtn:active {
+  border-color: darkorchid;
+  color: wheat;
+  background-color: darkorchid;
+}
+
+.spiner {
+  z-index: 100;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  height: 25px;
+  width: 25px;
+  margin-left: -12.5px;
+  border-right: 4px solid green;
+  border-top: 4px solid gold;
+  border-bottom: 4px solid orange;
+  border-left: 4px solid blue;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg)
+   }
+
+   100% {
+     transform: rotate(360deg)
+   }
+ }
