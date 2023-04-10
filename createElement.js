@@ -15,6 +15,9 @@ export default class СreateElement {
     if (document.querySelector(".card__text_name")) {
       document.querySelector(".card__text_name").remove();
     }
+    if (document.querySelector(".spiner")) {
+      return;
+    }
     const random = Math.floor(Math.random() * (82 - 1) + 1);
     const output = document.createElement("p");
     const spiner = document.createElement("span");
